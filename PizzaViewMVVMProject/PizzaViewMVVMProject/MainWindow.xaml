@@ -9,10 +9,25 @@
     <Grid>
         <StackPanel Orientation="Horizontal">
             <StackPanel x:Name="spOrders" Orientation="Vertical">
-
+                <Expander x:Name="epOrders" IsExpanded="True" Header="Megrendelések">
+                    <DataGrid x:Name="dgOrders">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Megrendelés sorszáma"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Megrendelő"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Fizetendő összeg"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Kedvezmény"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>    
+                </Expander>
+                <Expander x:Name="epOrderItems" IsExpanded="False" Header="Megrendelés részletei">
+                    <DataGrid x:Name="dgOrderItems">
+                        <DataGrid.Columns>
+                            
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Expander>
             </StackPanel>
             <StackPanel x:Name="spPizza" Orientation="Vertical">
-                
             </StackPanel>
         </StackPanel>
     </Grid>

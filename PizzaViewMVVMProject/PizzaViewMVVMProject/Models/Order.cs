@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PizzaViewMVVMProject.Models
 {
+    // kedvezmény
     public enum Discount { None, Low, Medium }
 
     public class Order
